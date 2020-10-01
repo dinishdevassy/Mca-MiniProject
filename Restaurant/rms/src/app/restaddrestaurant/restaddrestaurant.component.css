@@ -1,0 +1,12 @@
+.img {
+    position: absolute; 
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: 0px auto;;
+}
+
+.tbl{
+    text-align: center;
+}

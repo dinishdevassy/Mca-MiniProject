@@ -1,0 +1,31 @@
+<!-- <p>adminapproval works!</p> -->
+<app-adminheader></app-adminheader>
+<div class="container">
+    <div class="row">
+        <div class="col col-6 col-sm-6 col-md-6">
+            <table class="table">
+                <thead>
+                    <th>Owner Name</th>
+                    <th>Owner PhNo</th>
+                    <th>Remarks</th>
+                    <th colspan="2">Approve/Reject</th>
+                    
+                </thead>
+                <tr *ngFor="let i of result,let j of index">
+                    <td>
+                        {{i.owner_name}}
+                    </td>  
+                    <td>{{i.owner_phno}}</td>
+                    <td><input type="text" name="" class=" form-control"id=""></td>
+                    <td><input type="button" class="text-primary "value="Approve" id="approved" (click)=approval(1,i._id)></td>   
+                    <td><input type="button" class="text-danger "value="Reject" id="rejected" (click)=approval(2,i._id) ></td>
+                    
+                </tr>
+                <br>
+            </table>
+        </div>
+        <div class="col col-6 col-sm-6 col-md-6">
+            <h1>section 2</h1>
+        </div>
+    </div>
+</div>

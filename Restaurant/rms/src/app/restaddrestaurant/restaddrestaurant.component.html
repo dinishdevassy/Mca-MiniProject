@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-6 col-sm-6 ">
+            <img src="../../assets/img/img1.jpeg" class ="img" alt="Img Not Found" >
+        </div>
+        <div class="col col-6 col-sm-6">
+            <table class="table">
+               <th class="thead-light" >Register your Restaurant...</th>
+               <tr>
+                   <td colspan="2">
+                        <input type="text" class="form-control"name="name" id="" ([ngmodel])='name' placeholder="Restaurant Name">
+                    </td>
+               </tr>
+               <tr>
+                <td><input type="text" class="form-control"name="phno" id="" ([ngmodel])='phno' placeholder="Ph No"></td>
+                <td><input type="text" class="form-control"name="email" id="" ([ngmodel])='email' placeholder="email"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control"name="opentime" id="" ([ngmodel])='opentime' placeholder="opening time"></td>
+                    <td><input type="text" class="form-control"name="closetime" id="" ([ngmodel])='closetime' placeholder="closing time"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control"name="city" id="" ([ngModel])='city' placeholder="city">
+                    <td>
+                        <!-- <select name="star" id="star"  [ngModel]="star" class="form-control">  -->
+                        <select  class="form-control" required>
+                            <option value="" disabled selected hidden>Select Star</option>
+                            <!-- <option value=" disabled selected hidden">select</option> -->
+                            <option *ngFor="let i of [1,2,3,4,5] " value={{i}}>{{i}} Star</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
